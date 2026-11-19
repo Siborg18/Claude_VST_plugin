@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+NAME = HardKickForge
+DPF_PATH ?= ../DPF
+DPF_TARGET_DIR = bin
+DPF_BUILD_DIR = build
+
+FILES_DSP = plugin/HardKickForgePlugin.cpp
+FILES_UI  = plugin/HardKickForgeUI.cpp
+
+include $(DPF_PATH)/Makefile.plugins.mk
+
+BUILD_CXX_FLAGS += -Iplugin -O3
+
+TARGETS = vst3 clap vst2
+all: $(TARGETS)

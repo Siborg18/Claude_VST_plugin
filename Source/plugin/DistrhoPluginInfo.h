@@ -1,0 +1,28 @@
+#ifndef DISTRHO_PLUGIN_INFO_H_INCLUDED
+#define DISTRHO_PLUGIN_INFO_H_INCLUDED
+
+#define DISTRHO_PLUGIN_BRAND   "Simon"
+#define DISTRHO_PLUGIN_NAME    "HardKick Forge"
+#define DISTRHO_PLUGIN_URI     "urn:simon:hardkickforge"
+#define DISTRHO_PLUGIN_CLAP_ID "com.simon.hardkickforge"
+
+#define DISTRHO_PLUGIN_BRAND_ID  SmnP
+#define DISTRHO_PLUGIN_UNIQUE_ID HkFg
+
+#define DISTRHO_PLUGIN_HAS_UI          1
+#define DISTRHO_PLUGIN_IS_RT_SAFE      1
+#define DISTRHO_PLUGIN_NUM_INPUTS      2
+#define DISTRHO_PLUGIN_NUM_OUTPUTS     2
+#define DISTRHO_PLUGIN_WANT_PROGRAMS   1
+#define DISTRHO_PLUGIN_WANT_LATENCY    1
+#define DISTRHO_PLUGIN_WANT_DIRECT_ACCESS 1
+#define DISTRHO_UI_USE_NANOVG          1
+#define DISTRHO_UI_USER_RESIZABLE      1
+#define DISTRHO_UI_FILE_BROWSER        0
+#define DISTRHO_UI_DEFAULT_WIDTH       900
+#define DISTRHO_UI_DEFAULT_HEIGHT      580
+
+#define DISTRHO_PLUGIN_VST3_CATEGORIES "Fx|Distortion"
+#define DISTRHO_PLUGIN_CLAP_FEATURES   "audio-effect", "distortion", "stereo"
+
+#endif

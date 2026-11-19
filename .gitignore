@@ -1,0 +1,13 @@
+# Build output
+build/
+bin/
+*.vst3
+*.clap
+*.dll
+*.so
+*.dylib
+*.o
+*.d
+# Audio renders
+*.wav
+Demo/

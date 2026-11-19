@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+NAME = HardKickForge2
+DPF_PATH ?= ../DPF
+DPF_TARGET_DIR = bin
+DPF_BUILD_DIR = build
+
+FILES_DSP = plugin/HardKickForge2Plugin.cpp
+FILES_UI  = plugin/HardKickForge2UI.cpp
+
+include $(DPF_PATH)/Makefile.plugins.mk
+
+BUILD_CXX_FLAGS += -Iplugin -O3
+
+TARGETS = vst3 clap vst2
+all: $(TARGETS)
+
+ifeq ($(WINDOWS),true)
+LINK_FLAGS += -lole32 -luuid
+endif
