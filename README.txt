@@ -42,3 +42,9 @@ OTHER FORMATS
 SOURCE
  Built with DPF (DISTRHO Plugin Framework). To rebuild: clone https://github.com/DISTRHO/DPF next to
  the Source folder and run "make" (MinGW-w64 on Windows or Linux cross-compile).
+
+LICENCE
+-------
+The plugin code in this repository is released under the MIT licence (see LICENSE).
+It is built with DPF, the DISTRHO Plugin Framework (https://github.com/DISTRHO/DPF),
+which is under the ISC licence and is not included in this repository.
